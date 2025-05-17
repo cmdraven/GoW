@@ -27,6 +27,61 @@ nav {
   margin-bottom: 20px;
 }
 
+/* Add these new styles */
+#aboutTab {
+display: flex;
+  background: white;
+  padding: 0 10%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.about-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.about-content h2 {
+  font-family: 'Merriweather', serif;
+  color: var(--dark);
+  margin-top: 30px;
+  border-bottom: 1px solid var(--gray);
+  padding-bottom: 8px;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.about-content ul {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.about-content li {
+  margin-bottom: 10px;
+}
+
+.contact {
+  margin-top: 40px;
+  padding: 20px;
+  background: var(--light);
+  border-radius: 6px;
+  text-align: center;
+}
+
+.contact a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
 nav button {
   flex: 1;
   padding: 15px;
