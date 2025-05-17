@@ -33,6 +33,66 @@
       </div>
       <button id="submitStory" onclick="submitStory()">Publish</button>
       <div id="storyList"></div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guild of Woden</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <!-- Firebase and Quill scripts remain same -->
+</head>
+<body>
+  <nav>
+    <div class="logo-container">
+      <img src="logo.png" alt="Guild of Woden" class="logo">
+    </div>
+    <div class="nav-buttons">
+      <button id="storiesTab" class="active"><i class="fas fa-book-open"></i> Stories</button>
+      <button id="chatTab"><i class="fas fa-comments"></i> Community</button>
+      <button id="aboutTab"><i class="fas fa-info-circle"></i> About</button>
+    </div>
+  </nav>
+
+  <div class="content-wrapper">
+    <!-- Existing Stories and Community sections remain same -->
+    
+    <!-- New About Section -->
+    <section id="aboutSection" class="hidden">
+      <header>
+        <h1>About Guild of Woden</h1>
+        <p>The Thought Behind the Project</p>
+      </header>
+      
+      <article class="about-content">
+        <h2>The Idea</h2>
+        <p>Guild of Woden was born from a simple observation - in a world full of noise, we often miss the quiet wisdom that comes from thoughtful, anonymous sharing. Unlike social media where personalities dominate, this platform lets ideas stand on their own merit.</p>
+        
+        <h2>Why "Woden"?</h2>
+        <p>Woden (or Odin) was the Norse god of wisdom, poetry, and secret knowledge. He sacrificed an eye to drink from the well of wisdom - a reminder that true understanding often requires looking at things differently.</p>
+        
+        <h2>Our Purpose</h2>
+        <p>This is more than just a writing platform. It's an experiment in collective thinking where:</p>
+        <ul>
+          <li>Ideas matter more than identities</li>
+          <li>Thoughtfulness beats quick reactions</li>
+          <li>Diverse perspectives create better understanding</li>
+        </ul>
+        
+        <h2>The Creator</h2>
+        <p>Created by Nikit Chobisa, a 7th grader who thinks and builds. The project reflects a belief that age doesn't limit one's ability to create meaningful things in the digital world.</p>
+        
+        <div class="contact">
+          <h3>Contact</h3>
+          <p>For questions or thoughts: <a href="mailto:nikitchobisa18@gmail.com">nikitchobisa18@gmail.com</a></p>
+        </div>
+      </article>
+    </section>
+  </div>
+      
     </section>
     
     <!-- Chat Section (hidden by default) -->
