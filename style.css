@@ -49,46 +49,6 @@ nav button i {
   font-size: 0.9em;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--dark);
-  padding: 10px 5%;
-  flex-wrap: wrap;
-}
-
-.logo-container {
-  flex: 1;
-  min-width: 150px;
-}
-
-.search-container {
-  flex: 2;
-  min-width: 200px;
-  margin: 0 20px;
-}
-
-.nav-buttons {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  min-width: 200px;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .logo-container, .search-container, .nav-buttons {
-    width: 100%;
-    justify-content: center;
-  }
-}
-
 .content-wrapper {
   width: 80%;
   max-width: 800px;
@@ -142,6 +102,7 @@ header p {
 
 .ql-container.ql-snow {
   border: none !important;
+  
 }
 
 #submitStory {
