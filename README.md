@@ -19,15 +19,13 @@ Whether you're seeking diverse opinions, deliberating on complex topics, or simp
 - Threads are organized by **recency and engagement**.  
 
 ### **3. Voting & Consensus**  
-- Upvote perspectives that resonate.  
 - The most compelling ideas rise naturally.  
 
 ### **4. Minimalist, Text-First Design**  
 - No distractions—just reading and writing.  
 - Clean typography for optimal readability.  
 
-### **5. Optional Ephemerality**  
-- Posts can be set to auto-delete after a period (e.g., 24h, 7d).  
+
 
 ---
 
