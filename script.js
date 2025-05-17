@@ -109,6 +109,28 @@ database.ref('stories').orderByChild('timestamp').limitToLast(20).on('value', (s
   });
 });
 
+// Consider adding pagination
+const itemsPerPage = 10;
+let currentPage = 0;
+
+function displaySearchResults(results, query) {
+  // ... existing code ...
+  const paginatedResults = results.slice(
+    currentPage * itemsPerPage,
+    (currentPage + 1) * itemsPerPage
+  );
+  // ... display paginated results ...
+}
+
+
+
+// Example debounce:
+let searchTimeout;
+document.getElementById('searchInput').addEventListener('input', (e) => {
+  clearTimeout(searchTimeout);
+  searchTimeout = setTimeout(performSearch, 300);
+});
+
 // Load chat messages
 database.ref('messages').orderByChild('timestamp').limitToLast(30).on('value', (snapshot) => {
   const messages = snapshot.val();
