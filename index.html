@@ -201,38 +201,40 @@
 
   <script>
     // Tab switching functionality
-    document.getElementById('storiesTab').addEventListener('click', () => {
-      document.getElementById('storiesSection').classList.remove('hidden');
-      document.getElementById('chatSection').classList.add('hidden');
-      document.getElementById('aboutSection').classList.add('hidden');
-      
-      document.getElementById('storiesTab').classList.add('active');
-      document.getElementById('chatTab').classList.remove('active');
-      document.getElementById('aboutTab').classList.remove('active');
-    });
+   // Tab switching functionality
+document.getElementById('storiesTab').addEventListener('click', () => {
+  document.getElementById('storiesSection').classList.remove('hidden');
+  document.getElementById('chatSection').classList.add('hidden');
+  document.getElementById('aboutSection').classList.add('hidden');
+  
+  document.getElementById('storiesTab').classList.add('active');
+  document.getElementById('chatTab').classList.remove('active');
+  document.getElementById('aboutTab').classList.remove('active');
+});
 
-    document.getElementById('chatTab').addEventListener('click', () => {
-      document.getElementById('storiesSection').classList.add('hidden');
-      document.getElementById('chatSection').classList.remove('hidden');
-      document.getElementById('aboutSection').classList.add('hidden');
-      
-      document.getElementById('storiesTab').classList.remove('active');
-      document.getElementById('chatTab').classList.add('active');
-      document.getElementById('aboutTab').classList.remove('active');
-    });
+document.getElementById('chatTab').addEventListener('click', () => {
+  document.getElementById('storiesSection').classList.add('hidden');
+  document.getElementById('chatSection').classList.remove('hidden');
+  document.getElementById('aboutSection').classList.add('hidden');
+  
+  document.getElementById('storiesTab').classList.remove('active');
+  document.getElementById('chatTab').classList.add('active');
+  document.getElementById('aboutTab').classList.remove('active');
+});
 
-    document.getElementById('aboutTab').addEventListener('click', () => {
-      document.getElementById('storiesSection').classList.add('hidden');
-      document.getElementById('chatSection').classList.add('hidden');
-      document.getElementById('aboutSection').classList.remove('hidden');
-      
-      document.getElementById('storiesTab').classList.remove('active');
-      document.getElementById('chatTab').classList.remove('active');
-      document.getElementById('aboutTab').classList.add('active');
-    });
+document.getElementById('aboutTab').addEventListener('click', () => {
+  document.getElementById('storiesSection').classList.add('hidden');
+  document.getElementById('chatSection').classList.add('hidden');
+  document.getElementById('aboutSection').classList.remove('hidden');
+  
+  document.getElementById('storiesTab').classList.remove('active');
+  document.getElementById('chatTab').classList.remove('active');
+  document.getElementById('aboutTab').classList.add('active');
+});
 
-    // Start on About page
-    document.getElementById('aboutTab').classList.add('active');
+// Start on About page
+document.getElementById('aboutSection').classList.remove('hidden'); // Ensure About section is visible
+
   </script>
 </body>
 </html>
