@@ -126,6 +126,21 @@ database.ref('messages').orderByChild('timestamp').limitToLast(30).on('value', (
     messageDiv.textContent = messages[key].text;
     chatMessages.appendChild(messageDiv);
   });
+
+  // Add to your existing tab switching code
+document.getElementById('aboutTab').addEventListener('click', () => {
+  document.getElementById('storiesSection').classList.add('hidden');
+  document.getElementById('chatSection').classList.add('hidden');
+  document.getElementById('aboutSection').classList.remove('hidden');
+  
+  // Update active tab
+  document.getElementById('storiesTab').classList.remove('active');
+  document.getElementById('chatTab').classList.remove('active');
+  document.getElementById('aboutTab').classList.add('active');
+});
+
+// Initialize to show stories section by default
+document.getElementById('aboutSection').classList.add('hidden');
   
   chatMessages.scrollTop = chatMessages.scrollHeight;
 });
