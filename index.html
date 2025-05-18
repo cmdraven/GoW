@@ -17,7 +17,7 @@
 <body>
   <nav>
     <button id="storiesTab" class="active"><i class="fas fa-book-open"></i> Stories</button>
-   
+    <button id="chatTab"><i class="fas fa-comment-dots"></i> Community</button>
   </nav>
   
   <div class="content-wrapper">
@@ -36,7 +36,19 @@
     </section>
     
     <!-- Chat Section (hidden by default) -->
-    
+    <section id="chatSection" class="hidden">
+      <div class="chat-header">
+        <h2><i class="fas fa-comment-dots"></i> Lounge</h2>
+        <p>Thoughts and conversation</p>
+      </div>
+      
+      <div id="chatMessages"></div>
+      <div class="chat-input">
+        <input type="text" id="messageInput" placeholder="Share a thought...">
+        <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </section>
+  </div>
 
   <script src="script.js"></script>
 </body>
