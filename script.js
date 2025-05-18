@@ -1,5 +1,8 @@
 // TODO: Replace the config object with your Firebase project's config from Firebase console
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next"
 const firebaseConfig = {
   apiKey: "AIzaSyBacV5Sfl7vYpIoKWIP9_QZAdhwdIZ8qFQ",
   authDomain: "guild-of-odin.firebaseapp.com",
